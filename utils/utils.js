@@ -22,7 +22,11 @@ export function handleFormSubmit(e) {
     method: "GET",
   })
     .then((res) => {
-      return res.json();
+      if (res.ok) {
+        return res.json();
+      } else {
+        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+      }
     })
     .then((data) => {
       alert(data);
