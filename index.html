@@ -9,7 +9,6 @@
   <meta name="description" content="Тестовое задание 2 для ООО Теремъ">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
   <link rel="stylesheet" href="./pages/index.css">
   <title>Тест2</title>
 </head>
@@ -18,9 +17,41 @@
   <div class="page">
     <main class="content">
       <section class="block">
-        <form class="block__form" name="blockForm">
+        <form class="block__form" id="form" name="blockForm">
 
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select first__select" name="firstSelect" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select class="form-select second__select" name="secondSelect" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select class="form-select third__select" name="thirdSelect" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select class="form-select fourth__select" name="fourthSelect" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select class="form-select fifth__select" name="fifthSelect" aria-label="Default select example">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -30,12 +61,13 @@
 
           <div class="mb-3 block__input">
             <label for="firstInput" class="form-label">Поле для ручного ввода информации:</label>
-            <input type="text" class="form-control" id="firstInput" aria-describedby="emailHelp">
+            <input type="text" class="form-control first__input" name="firstInput" id="firstInput"
+              aria-describedby="emailHelp">
           </div>
 
           <div class="mb-3 block__input">
             <label for="secondInput" class="form-label">Поле для ручного ввода информации:</label>
-            <input type="text" class="form-control" id="secondInput">
+            <input type="text" class="form-control second__input" name="secondInput" id="secondInput">
           </div>
 
           <button type="submit" class="block__btn">Отправить</button>
@@ -51,6 +83,8 @@
   </div>
 
   <script src="./pages/index.js" type="module"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+
 </body>
 
 </html>
